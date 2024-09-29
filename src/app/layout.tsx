@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
@@ -26,7 +27,7 @@ export default async function RootLayout({
 
   return (
     <html lang='en'>
-      <head>
+      <Head>
         <title>devgancode</title>
         <link rel='icon' href={data.favicon || "/favicon.ico"} />
         <title>devgancode</title>
@@ -62,7 +63,7 @@ export default async function RootLayout({
           name='twitter:image'
           content='https://opengraph.b-cdn.net/production/images/bbc3e315-cdd2-473b-bc0e-0af8a1218e2c.png?token=hC99BhYl1WlU6Pmk1hryXictgpuVAAeWUd8aNpku9fQ&height=901&width=1200&expires=33263625503'
         />
-      </head>
+      </Head>
       <body className={inter.className}>
         <Providers>
           <Navbar />
