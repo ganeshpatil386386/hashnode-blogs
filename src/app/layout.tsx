@@ -5,6 +5,7 @@ import Providers from "@/components/providers";
 import NewsletterCard from "@/components/newsletter-card";
 import Footer from "@/components/footer";
 import { getBlogName } from "@/lib/requests";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,13 +25,14 @@ export default async function RootLayout({
   const data = await getBlogName();
 
   return (
-    <html lang="en">
+    <html lang='en'>
       <head>
-        <link rel="icon" href={data.favicon || "/favicon.ico"} />
+        <link rel='icon' href={data.favicon || "/favicon.ico"} />
       </head>
       <body className={inter.className}>
         <Providers>
           <Navbar />
+          <Analytics />
           {children}
           <NewsletterCard />
           <Footer />
