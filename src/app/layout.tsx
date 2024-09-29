@@ -36,11 +36,7 @@ export default async function RootLayout({
           content='https://devgancode-blogs.vercel.app/'
         />
         <meta property='og:type' content='website' />
-        <meta
-          property='og:site_name'
-          content='https://devgancode-blogs.vercel.app/'
-        />
-
+        <meta property='og:site_name' content='devgancode' />
         <meta property='og:title' content='devgancode' />
         <meta
           property='og:description'
@@ -50,8 +46,19 @@ export default async function RootLayout({
           property='og:image'
           content='https://opengraph.b-cdn.net/production/images/bbc3e315-cdd2-473b-bc0e-0af8a1218e2c.png?token=hC99BhYl1WlU6Pmk1hryXictgpuVAAeWUd8aNpku9fQ&height=901&width=1200&expires=33263625503'
         />
+        <meta
+          property='og:image:alt'
+          content='Cover image for devgancode - tech blog'
+        />
 
-        <meta property='description' content='Tech Blog for techies.' />
+        <meta
+          name='description'
+          content='Explore insightful articles on web development, DevOps, backend technologies, and modern frontend styling.'
+        />
+        <meta
+          name='keywords'
+          content='web development, DevOps, backend, frontend, tech blog, programming tutorials, coding, devgancode'
+        />
 
         <meta property='twitter:card' content='summary_large_image' />
         <meta property='twitter:domain' content='devgancode-blogs.vercel.app' />
@@ -68,6 +75,12 @@ export default async function RootLayout({
           property='twitter:image'
           content='https://opengraph.b-cdn.net/production/images/bbc3e315-cdd2-473b-bc0e-0af8a1218e2c.png?token=hC99BhYl1WlU6Pmk1hryXictgpuVAAeWUd8aNpku9fQ&height=901&width=1200&expires=33263625503'
         />
+        <meta
+          name='twitter:image:alt'
+          content='Cover image for devgancode - tech blog'
+        />
+
+        <link rel='canonical' href='https://devgancode-blogs.vercel.app/' />
       </head>
       <body className={inter.className}>
         <Providers>
