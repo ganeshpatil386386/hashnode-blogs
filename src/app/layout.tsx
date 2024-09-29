@@ -36,6 +36,11 @@ export default async function RootLayout({
           content='https://devgancode-blogs.vercel.app/'
         />
         <meta property='og:type' content='website' />
+        <meta
+          property='og:site_name'
+          content='https://devgancode-blogs.vercel.app/'
+        />
+
         <meta property='og:title' content='devgancode' />
         <meta
           property='og:description'
@@ -46,19 +51,21 @@ export default async function RootLayout({
           content='https://opengraph.b-cdn.net/production/images/bbc3e315-cdd2-473b-bc0e-0af8a1218e2c.png?token=hC99BhYl1WlU6Pmk1hryXictgpuVAAeWUd8aNpku9fQ&height=901&width=1200&expires=33263625503'
         />
 
-        <meta name='twitter:card' content='summary_large_image' />
+        <meta property='description' content='Tech Blog for techies.' />
+
+        <meta property='twitter:card' content='summary_large_image' />
         <meta property='twitter:domain' content='devgancode-blogs.vercel.app' />
         <meta
           property='twitter:url'
           content='https://devgancode-blogs.vercel.app/'
         />
-        <meta name='twitter:title' content='devgancode' />
+        <meta property='twitter:title' content='devgancode' />
         <meta
-          name='twitter:description'
+          property='twitter:description'
           content='Discover in-depth guides and articles on web development, backend, DevOps, and frontend styling. Join devgancode for practical tips and knowledge to boost your tech skills.'
         />
         <meta
-          name='twitter:image'
+          property='twitter:image'
           content='https://opengraph.b-cdn.net/production/images/bbc3e315-cdd2-473b-bc0e-0af8a1218e2c.png?token=hC99BhYl1WlU6Pmk1hryXictgpuVAAeWUd8aNpku9fQ&height=901&width=1200&expires=33263625503'
         />
       </head>
