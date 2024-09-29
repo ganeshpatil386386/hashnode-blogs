@@ -27,11 +27,9 @@ export default async function RootLayout({
 
   return (
     <html lang='en'>
-      <Head>
+      <head>
         <title>devgancode</title>
         <link rel='icon' href={data.favicon || "/favicon.ico"} />
-        <title>devgancode</title>
-        <meta name='description' content='' />
 
         <meta
           property='og:url'
@@ -63,7 +61,7 @@ export default async function RootLayout({
           name='twitter:image'
           content='https://opengraph.b-cdn.net/production/images/bbc3e315-cdd2-473b-bc0e-0af8a1218e2c.png?token=hC99BhYl1WlU6Pmk1hryXictgpuVAAeWUd8aNpku9fQ&height=901&width=1200&expires=33263625503'
         />
-      </Head>
+      </head>
       <body className={inter.className}>
         <Providers>
           <Navbar />
